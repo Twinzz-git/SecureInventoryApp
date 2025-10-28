@@ -1,3 +1,4 @@
+from auth import login_user, register_user
 from validator import validar_username, validar_email, validar_password
 from getpass import getpass
 
@@ -20,19 +21,37 @@ def register():
         print("Password must be at least 8 chars, include a letter and a number.")
         return
 
-    # aquí llamarías register_user(username, email, password)
-    print("Validation OK — proceed to register.")
+    # Registrar al usuario
+    if register_user(username, email, password):
+        print("✅ User registered successfully!")
+    else:
+        print("❌ Username or email already exists.")
+
+
+def login():
+    email = input("Email: ")
+    password = getpass("Password: ")
+    user = login_user(email, password)
+    
+    if user:
+        print(f"✅ Welcome back, {user['username']}!")
+    else:
+        print("❌ Login failed. Check your email and password.")
+
 
 def main():
     while True:
         print("\nSelect an option:")
         print("1. Register")
-        print("2. Exit")
+        print("2. Login")
+        print("3. Exit")
         choice = input("> ")
 
         if choice == "1":
             register()
         elif choice == "2":
+            login()
+        elif choice == "3":
             break
         else:
             print("Invalid option.")
