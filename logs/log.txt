@@ -1,0 +1,6 @@
+[2025-10-30 16:24:17] User: testuser - Action: User registered
+[2025-10-30 16:24:39] User: testuser - Action: Login successful
+[2025-10-30 16:25:03] User: testuser - Action: Viewed products
+[2025-10-30 16:25:09] User: testuser - Action: Logout
+[2025-10-30 16:29:44] User: testuser - Action: Login successful
+[2025-10-30 16:33:15] User: testuser - Action: Viewed logs
