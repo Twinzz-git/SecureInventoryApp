@@ -37,6 +37,62 @@ def login():
         print(f"✅ Welcome back, {user['username']}!")
     else:
         print("❌ Login failed. Check your email and password.")
+        return
+
+    def admin_user():
+        while True:
+            print(f"/ ADMIN USER MENU / {user['username']}")
+            print("1. View products")
+            print("2. Add product")
+            print("3. Edit product")
+            print("4. Delete product")
+            print("5. View logs")
+            print("6. Logout")
+
+            choice = input("> ")
+
+            if choice == "1":
+                print("View products - not implemented yet.")
+            elif choice == "2":
+                print("Add product - not implemented yet.")
+            elif choice == "3":
+                print("Edit product - not implemented yet.")
+            elif choice == "4":
+                print("Delete product - not implemented yet.")
+            elif choice == "5":
+                print("View logs - not implemented yet.")
+            elif choice == "6":
+                break
+            else:
+                print("Invalid option.")
+                
+                
+                def regular_user():
+                    
+                    while True:
+                        print(f"/ USER MENU / {user['username']}")
+                        print("1. View products")
+                        print("2. Logout")
+
+                        choice = input("> ")
+
+                        if choice == "1":
+                            print("View products - not implemented yet.")
+                       
+                        elif choice == "2":
+                            break
+                        else:
+                            print("Invalid option.")
+                        
+                        
+                        
+                
+                
+
+    
+  
+
+   
 
 
 def main():

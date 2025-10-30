@@ -4,5 +4,17 @@
     "email": "elisamuelayala345@gmail.com",
     "password_hash": "c5dedf2f102b29f75b0daf71c23ec5cb6866c3a02f07e77216c135c2f4a462ff",
     "role": "user"
+  },
+  {
+    "username": "Samu",
+    "email": "jaaziel223@gmail.com",
+    "password_hash": "6ba51c74441292040c74f151c883c12ec4d3217bad38e95fda16f5b002d7c186",
+    "role": "user"
+  },
+  {
+    "username": "eli",
+    "email": "elisamuel334@gmail.com",
+    "password_hash": "c5dedf2f102b29f75b0daf71c23ec5cb6866c3a02f07e77216c135c2f4a462ff",
+    "role": "user"
   }
 ]
