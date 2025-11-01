@@ -2,6 +2,7 @@ from auth import login_user, register_user
 from validator import validar_username, validar_email, validar_password
 from getpass import getpass
 from logger import log_action
+from product import readproducts, createproduct, updateproduct, deleteproduct, loadproducts
 
 def register():
     username = input("Username: ")
@@ -64,19 +65,19 @@ def admin_menu(user):
 
         if choice == "1":
             log_action(user['username'], "Viewed products")
-            print("📦 View products - not implemented yet.")
+            readproducts()
         elif choice == "2":
             log_action(user['username'], "Attempted to add product")
-            print("➕ Add product - not implemented yet.")
+            add_product_menu()
         elif choice == "3":
             log_action(user['username'], "Attempted to edit product")
-            print("✏️ Edit product - not implemented yet.")
+            edit_product_menu()
         elif choice == "4":
             log_action(user['username'], "Attempted to delete product")
-            print("🗑️ Delete product - not implemented yet.")
+            delete_product_menu()
         elif choice == "5":
             log_action(user['username'], "Viewed logs")
-            print("📋 View logs - not implemented yet.")
+            view_logs()
         elif choice == "6":
             log_action(user['username'], "Logout")
             print("👋 Logged out successfully!")
@@ -95,13 +96,133 @@ def user_menu(user):
 
         if choice == "1":
             log_action(user['username'], "Viewed products")
-            print("📦 View products - not implemented yet.")
+            readproducts()
         elif choice == "2":
             log_action(user['username'], "Logout")
             print("👋 Logged out successfully!")
             break
         else:
             print("❌ Invalid option.")
+
+
+def add_product_menu():
+    """Menú para agregar producto"""
+    print("\n➕ ADD NEW PRODUCT")
+    print("-"*40)
+    
+    name = input("Product name: ").strip()
+    if not name:
+        print("❌ Product name cannot be empty.")
+        return
+    
+    try:
+        price = float(input("Price: $"))
+        if price < 0:
+            print("❌ Price cannot be negative.")
+            return
+    except ValueError:
+        print("❌ Price must be a number.")
+        return
+    
+    try:
+        stock = int(input("Stock quantity: "))
+        if stock < 0:
+            print("❌ Stock cannot be negative.")
+            return
+    except ValueError:
+        print("❌ Stock must be a number.")
+        return
+    
+    createproduct(name, price, stock)
+
+
+def edit_product_menu():
+    """Menú para editar producto"""
+    products = loadproducts()
+    
+    if not products:
+        print("\n📦 No products to edit.")
+        return
+    
+    readproducts()
+    
+    product_name = input("\nEnter product name to edit: ").strip()
+    
+    print("\n✏️ EDIT PRODUCT (leave blank to keep current value)")
+    print("-"*40)
+    
+    new_name = input("New name: ").strip()
+    if not new_name:
+        new_name = None
+    
+    price_str = input("New price: $").strip()
+    if price_str:
+        try:
+            new_price = float(price_str)
+            if new_price < 0:
+                print("⚠️ Price cannot be negative. Keeping old value.")
+                new_price = None
+        except ValueError:
+            print("⚠️ Invalid price. Keeping old value.")
+            new_price = None
+    else:
+        new_price = None
+    
+    stock_str = input("New stock: ").strip()
+    if stock_str:
+        try:
+            new_stock = int(stock_str)
+            if new_stock < 0:
+                print("⚠️ Stock cannot be negative. Keeping old value.")
+                new_stock = None
+        except ValueError:
+            print("⚠️ Invalid stock. Keeping old value.")
+            new_stock = None
+    else:
+        new_stock = None
+    
+    updateproduct(product_name, name=new_name, price=new_price, stock=new_stock)
+
+
+def delete_product_menu():
+    """Menú para eliminar producto"""
+    products = loadproducts()
+    
+    if not products:
+        print("\n📦 No products to delete.")
+        return
+    
+    readproducts()
+    
+    product_name = input("\nEnter product name to delete: ").strip()
+    deleteproduct(product_name)
+
+
+def view_logs():
+    """Muestra las últimas 20 líneas del log (solo para admin)"""
+    from pathlib import Path
+    
+    LOG_FILE = Path("logs/log.txt")
+    
+    if not LOG_FILE.exists():
+        print("\n📄 No logs available yet.")
+        return
+    
+    try:
+        with open(LOG_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        
+        print("\n" + "="*70)
+        print("📋 LAST 20 LOG ENTRIES")
+        print("="*70)
+        
+        # Mostrar últimas 20 líneas
+        for line in lines[-20:]:
+            print(line.strip())
+        
+        print("="*70)
+    except Exception:
+        print("❌ Error reading logs.")
 
 
 def main():
