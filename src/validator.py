@@ -26,11 +26,12 @@ def validar_password(password: str) -> bool:
         return False
     return True
 
-def validar_sku(sku: str) -> bool:
-    # SKU debe ser alfanumérico y tener entre 5 y 10 caracteres
-    if len(sku) < 5 or len(sku) > 10:
+def validarproductname(name: str) -> bool:
+    # Nombre debe tener entre 2 y 50 caracteres
+    if len(name) < 2 or len(name) > 50:
         return False
-    if not sku.isalnum():
+    # Permitir letras, números, espacios y algunos símbolos
+    if not re.match(r'^[a-zA-Z0-9\s\-\_\.]+$', name):
         return False
     return True
 

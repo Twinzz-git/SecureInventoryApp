@@ -16,6 +16,7 @@ def log_action(username: str, action: str):
     # Crear línea de log
     log_entry = f"[{timestamp}] User: {username} - Action: {action}\n"
     
+    
     # Escribir en el archivo
     archivo = open(logfile, "a", encoding="utf-8")
     archivo.write(log_entry)

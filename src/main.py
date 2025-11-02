@@ -1,5 +1,5 @@
 from auth import login_user, register_user
-from validator import validar_username, validar_email, validar_password, validar_sku, validar_price, validar_stock
+from validator import validar_username, validar_email, validar_password
 from getpass import getpass
 from logger import log_action
 from product import readproducts, createproduct, updateproduct, deleteproduct, loadproducts
@@ -68,13 +68,13 @@ def admin_menu(user):
             readproducts()
         elif choice == "2":
             log_action(user['username'], "Attempted to add product")
-            add_product_menu()
+            add_product_menu(user['username'])
         elif choice == "3":
             log_action(user['username'], "Attempted to edit product")
-            edit_product_menu()
+            edit_product_menu(user['username'])
         elif choice == "4":
             log_action(user['username'], "Attempted to delete product")
-            delete_product_menu()
+            delete_product_menu(user['username'])
         elif choice == "5":
             log_action(user['username'], "Viewed logs")
             view_logs()
@@ -111,19 +111,14 @@ def add_product_menu():
     print("-"*40)
     
     name = input("Product name: ").strip()
-    
     if not name:
         print("❌ Product name cannot be empty.")
-        return
-        
-    if not validar_sku(name):
-        print("❌ Invalid SKU format.")
         return
     
     try:
         price = float(input("Price: $"))
-        if not validar_price(price):
-            print("❌ Invalid price.")
+        if price < 0:
+            print("❌ Price cannot be negative.")
             return
     except ValueError:
         print("❌ Price must be a number.")
@@ -141,7 +136,7 @@ def add_product_menu():
     createproduct(name, price, stock)
 
 
-def edit_product_menu():
+def edit_product_menu(username):
     """Menú para editar producto"""
     products = loadproducts()
     
@@ -186,10 +181,10 @@ def edit_product_menu():
     else:
         new_stock = None
     
-    updateproduct(product_name, name=new_name, price=new_price, stock=new_stock)
+    updateproduct(product_name, name=new_name, price=new_price, stock=new_stock, username=username)
 
 
-def delete_product_menu():
+def delete_product_menu(username):
     """Menú para eliminar producto"""
     products = loadproducts()
     
@@ -200,7 +195,7 @@ def delete_product_menu():
     readproducts()
     
     product_name = input("\nEnter product name to delete: ").strip()
-    deleteproduct(product_name)
+    deleteproduct(product_name, username)
 
 
 def view_logs():
