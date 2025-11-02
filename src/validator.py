@@ -25,3 +25,25 @@ def validar_password(password: str) -> bool:
     if not re.search(r'[0-9]', password):
         return False
     return True
+
+def validar_sku(sku: str) -> bool:
+    # SKU debe ser alfanumérico y tener entre 5 y 10 caracteres
+    if len(sku) < 5 or len(sku) > 10:
+        return False
+    if not sku.isalnum():
+        return False
+    return True
+
+def validar_price(price: float) -> bool:
+    # El precio debe ser un número positivo
+    if price <= 0:
+        return False
+    return True
+
+def validar_stock(stock: int) -> bool:
+    
+    if stock < 0:
+        return False
+    return True
+
+

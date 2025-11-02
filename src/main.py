@@ -1,5 +1,5 @@
 from auth import login_user, register_user
-from validator import validar_username, validar_email, validar_password
+from validator import validar_username, validar_email, validar_password, validar_sku, validar_price, validar_stock
 from getpass import getpass
 from logger import log_action
 from product import readproducts, createproduct, updateproduct, deleteproduct, loadproducts
