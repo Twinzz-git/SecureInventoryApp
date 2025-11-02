@@ -111,14 +111,19 @@ def add_product_menu():
     print("-"*40)
     
     name = input("Product name: ").strip()
+    
     if not name:
         print("❌ Product name cannot be empty.")
+        return
+        
+    if not validar_sku(name):
+        print("❌ Invalid SKU format.")
         return
     
     try:
         price = float(input("Price: $"))
-        if price < 0:
-            print("❌ Price cannot be negative.")
+        if not validar_price(price):
+            print("❌ Invalid price.")
             return
     except ValueError:
         print("❌ Price must be a number.")
