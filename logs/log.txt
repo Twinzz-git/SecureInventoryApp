@@ -4,3 +4,31 @@
 [2025-10-30 16:25:09] User: testuser - Action: Logout
 [2025-10-30 16:29:44] User: testuser - Action: Login successful
 [2025-10-30 16:33:15] User: testuser - Action: Viewed logs
+[2025-11-03 21:43:25] User: test@gmail.com - Action: Login failed
+[2025-11-03 21:43:48] User: testuser - Action: Login successful
+[2025-11-03 21:43:57] User: testuser - Action: Attempted to add product
+[2025-11-03 21:51:23] User: testuser - Action: Login successful
+[2025-11-03 21:51:26] User: testuser - Action: Attempted to add product
+[2025-11-03 21:51:43] User: System - Action: Product created: Camisas, Price=$45.00, Stock=667
+[2025-11-03 21:51:52] User: testuser - Action: Viewed products
+[2025-11-03 21:52:03] User: testuser - Action: Attempted to edit product
+[2025-11-03 21:52:28] User: testuser - Action: Product update failed:  not found
+[2025-11-03 21:52:41] User: testuser - Action: Attempted to delete product
+[2025-11-03 21:52:47] User: testuser - Action: Product deletion failed: 1 not found
+[2025-11-03 21:52:57] User: testuser - Action: Attempted to delete product
+[2025-11-03 21:53:08] User: testuser - Action: Product deleted: Camisas, Price=$45.00, Stock=667
+[2025-11-03 21:53:17] User: testuser - Action: Viewed logs
+[2025-11-03 21:53:25] User: testuser - Action: Attempted to add product
+[2025-11-03 21:53:34] User: System - Action: Product created: zapatos, Price=$55.00, Stock=66
+[2025-11-03 21:53:36] User: testuser - Action: Attempted to add product
+[2025-11-03 21:53:49] User: System - Action: Product created: pantalones, Price=$553.00, Stock=77
+[2025-11-03 21:53:52] User: testuser - Action: Attempted to add product
+[2025-11-03 21:54:09] User: System - Action: Product created: Pantalones oversize, Price=$556.00, Stock=55
+[2025-11-03 21:54:11] User: testuser - Action: Attempted to add product
+[2025-11-03 21:54:23] User: System - Action: Product created: cartera supreme, Price=$777.00, Stock=90
+[2025-11-03 21:54:28] User: testuser - Action: Viewed products
+[2025-11-03 21:54:42] User: testuser - Action: Logout
+[2025-11-03 21:56:48] User: jose - Action: User registered
+[2025-11-03 21:57:29] User: jose - Action: Login successful
+[2025-11-03 21:57:33] User: jose - Action: Viewed products
+[2025-11-03 21:57:39] User: jose - Action: Logout

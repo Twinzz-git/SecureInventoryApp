@@ -105,7 +105,7 @@ def user_menu(user):
             print("❌ Invalid option.")
 
 
-def add_product_menu():
+def add_product_menu(username):
     """Menú para agregar producto"""
     print("\n➕ ADD NEW PRODUCT")
     print("-"*40)

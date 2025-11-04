@@ -22,5 +22,11 @@
     "email": "test@gmail.com",
     "password_hash": "c5dedf2f102b29f75b0daf71c23ec5cb6866c3a02f07e77216c135c2f4a462ff",
     "role": "admin"
+  },
+  {
+    "username": "jose",
+    "email": "jose@gmail.com",
+    "password_hash": "251c6586cda174b5f4aebb1b066a0dec503ae605a052d83da38d8d18a1cb01a0",
+    "role": "user"
   }
 ]

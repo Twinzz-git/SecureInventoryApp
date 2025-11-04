@@ -1,0 +1,22 @@
+[
+  {
+    "name": "zapatos",
+    "price": 55.0,
+    "stock": 66
+  },
+  {
+    "name": "pantalones",
+    "price": 553.0,
+    "stock": 77
+  },
+  {
+    "name": "Pantalones oversize",
+    "price": 556.0,
+    "stock": 55
+  },
+  {
+    "name": "cartera supreme",
+    "price": 777.0,
+    "stock": 90
+  }
+]
