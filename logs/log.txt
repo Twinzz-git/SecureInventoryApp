@@ -32,3 +32,6 @@
 [2025-11-03 21:57:29] User: jose - Action: Login successful
 [2025-11-03 21:57:33] User: jose - Action: Viewed products
 [2025-11-03 21:57:39] User: jose - Action: Logout
+[2025-11-03 22:23:53] User: testuser - Action: Login successful
+[2025-11-03 22:24:00] User: testuser - Action: Attempted to add product
+[2025-11-03 22:25:36] User: testuser - Action: Logout

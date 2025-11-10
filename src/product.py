@@ -30,7 +30,7 @@ def saveproduct(products):
         return False
 
 
-def createproduct(name, price, stock, username="System"):
+def createproduct(name, price, stock, username="System",):
     """Create a new product with the given name, price, and stock."""
     products = loadproducts()
     
