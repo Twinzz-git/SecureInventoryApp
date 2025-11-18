@@ -1,5 +1,8 @@
 import re
 
+maxprice= 99999.99
+maxstock= 9999.99  
+
 def validar_username(username: str) -> bool:
     if len(username) < 3 or len(username) > 20:
         return False
@@ -39,11 +42,16 @@ def validar_price(price: float) -> bool:
     # El precio debe ser un número positivo
     if price <= 0:
         return False
+    
+    elif price > maxprice:
+        return False
     return True
 
 def validar_stock(stock: int) -> bool:
     
     if stock < 0:
+        return False
+    elif stock > maxstock:
         return False
     return True
 

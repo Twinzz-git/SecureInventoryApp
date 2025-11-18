@@ -1,5 +1,5 @@
 from auth import login_user, register_user
-from validator import validar_username, validar_email, validar_password
+from validator import validar_username, validar_email, validar_password, validar_price, validar_stock, maxprice, maxstock
 from getpass import getpass
 from logger import log_action
 from product import readproducts, createproduct, updateproduct, deleteproduct, loadproducts
@@ -117,23 +117,35 @@ def add_product_menu(username):
     
     try:
         price = float(input("Price: $"))
-        if price < 0:
-            print("❌ Price cannot be negative.")
+        
+        # Usar validar_price() con límites
+        if not validar_price(price):
+            if price <= 0:
+                print("❌ Price must be greater than zero.")
+            else:
+                print(f"❌ Price cannot exceed ${maxprice:,.2f}")
             return
+            
     except ValueError:
         print("❌ Price must be a number.")
         return
     
     try:
         stock = int(input("Stock quantity: "))
-        if stock < 0:
-            print("❌ Stock cannot be negative.")
+        
+        # Usar validar_stock() con límites
+        if not validar_stock(stock):
+            if stock < 0:
+                print("❌ Stock cannot be negative.")
+            else:
+                print(f"❌ Stock cannot exceed {int(maxstock):,} units.")
             return
+            
     except ValueError:
         print("❌ Stock must be a number.")
         return
     
-    createproduct(name, price, stock)
+    createproduct(name, price, stock, username)
 
 
 def edit_product_menu(username):
@@ -159,9 +171,15 @@ def edit_product_menu(username):
     if price_str:
         try:
             new_price = float(price_str)
-            if new_price < 0:
-                print("⚠️ Price cannot be negative. Keeping old value.")
+            
+            # Usar validar_price() con límites
+            if not validar_price(new_price):
+                if new_price <= 0:
+                    print("⚠️ Price must be greater than zero. Keeping old value.")
+                else:
+                    print(f"⚠️ Price cannot exceed ${maxprice:,.2f}. Keeping old value.")
                 new_price = None
+                
         except ValueError:
             print("⚠️ Invalid price. Keeping old value.")
             new_price = None
@@ -172,9 +190,15 @@ def edit_product_menu(username):
     if stock_str:
         try:
             new_stock = int(stock_str)
-            if new_stock < 0:
-                print("⚠️ Stock cannot be negative. Keeping old value.")
+            
+            # Usar validar_stock() con límites
+            if not validar_stock(new_stock):
+                if new_stock < 0:
+                    print("⚠️ Stock cannot be negative. Keeping old value.")
+                else:
+                    print(f"⚠️ Stock cannot exceed {int(maxstock):,} units. Keeping old value.")
                 new_stock = None
+                
         except ValueError:
             print("⚠️ Invalid stock. Keeping old value.")
             new_stock = None

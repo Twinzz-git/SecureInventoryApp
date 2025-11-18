@@ -35,3 +35,23 @@
 [2025-11-03 22:23:53] User: testuser - Action: Login successful
 [2025-11-03 22:24:00] User: testuser - Action: Attempted to add product
 [2025-11-03 22:25:36] User: testuser - Action: Logout
+[2025-11-18 15:59:48] User: papapaps@gmail.com - Action: Login failed
+[2025-11-18 16:08:43] User: test@gmail.com - Action: Login failed
+[2025-11-18 16:09:16] User: test@gmail.com - Action: Login failed
+[2025-11-18 16:10:03] User: testuser - Action: Registration failed - duplicate user
+[2025-11-18 16:10:47] User: testuser - Action: Login successful
+[2025-11-18 16:11:08] User: testuser - Action: Attempted to edit product
+[2025-11-18 16:11:43] User: testuser - Action: Product update failed: 0 not found
+[2025-11-18 16:12:31] User: testuser - Action: Attempted to edit product
+[2025-11-18 16:13:08] User: testuser - Action: Product update failed: ' OR 1=1 -- not found
+[2025-11-18 16:13:43] User: testuser - Action: Attempted to add product
+[2025-11-18 16:14:25] User: testuser - Action: Attempted to add product
+[2025-11-18 16:14:47] User: System - Action: Product created: camisa gucci, Price=$99999999999999992486776161899288204254467086983483846143922597222529419997579302660316349376281765375153005841365553228283904.00, Stock=4444
+[2025-11-18 16:16:14] User: testuser - Action: Viewed products
+[2025-11-18 16:26:31] User: testuser - Action: Attempted to add product
+[2025-11-18 16:26:53] User: System - Action: Product created: chaqueta, Price=$99999999999999991433150857216.00, Stock=5500
+[2025-11-18 16:38:30] User: testuser - Action: Attempted to add product
+[2025-11-18 16:38:48] User: System - Action: Product created: papas, Price=$5555555555555555633551034754442806765692331698340507560768335719167850252702783783788007402420315935811793653543227883677388293159063316104042654004690093873153366982393856.00, Stock=555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+[2025-11-18 16:47:24] User: tesuser@gmail.com - Action: Login failed
+[2025-11-18 16:47:52] User: testuser - Action: Login successful
+[2025-11-18 16:47:56] User: testuser - Action: Attempted to add product
