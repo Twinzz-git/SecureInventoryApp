@@ -55,3 +55,104 @@
 [2025-11-18 16:47:24] User: tesuser@gmail.com - Action: Login failed
 [2025-11-18 16:47:52] User: testuser - Action: Login successful
 [2025-11-18 16:47:56] User: testuser - Action: Attempted to add product
+[2025-11-25 19:51:35] User: papas - Action: User registered
+[2025-11-25 19:52:56] User: test@gmail.com - Action: Login failed
+[2025-11-25 19:53:21] User: test@gmail.com - Action: Login failed
+[2025-11-25 19:53:44] User: testuser - Action: Login successful
+[2025-11-25 19:54:27] User: testuser - Action: Viewed products
+[2025-11-25 19:55:07] User: testuser - Action: Attempted to add product
+[2025-11-25 19:55:22] User: testuser - Action: Product created: cartera, Price=$66.00, Stock=77
+[2025-11-25 19:55:39] User: testuser - Action: Attempted to edit product
+[2025-11-25 19:56:30] User: testuser - Action: Product updated: cartera | Old: Price=$66.00, Stock=77 | New: Name=cartera gucci, Price=$888.00, Stock=90
+[2025-11-25 19:56:43] User: testuser - Action: Attempted to add product
+[2025-11-25 19:56:56] User: testuser - Action: Product created: carterazzzz, Price=$666.00, Stock=55
+[2025-11-25 19:57:09] User: testuser - Action: Attempted to edit product
+[2025-11-25 19:57:28] User: testuser - Action: Product update failed: cartx not found
+[2025-11-25 19:58:30] User: testuser - Action: Logout
+[2025-11-25 20:11:44] User: eleven - Action: User registered
+[2025-11-25 20:12:42] User: testuser - Action: Login successful
+[2025-11-25 20:12:52] User: testuser - Action: Viewed products
+[2025-11-25 20:13:34] User: testuser - Action: Attempted to add product
+[2025-11-25 20:13:48] User: testuser - Action: Product created: carteras supreme, Price=$5550.00, Stock=50
+[2025-11-25 20:14:00] User: testuser - Action: Attempted to edit product
+[2025-11-25 20:15:36] User: testuser - Action: Product update failed: papazxs not found
+[2025-11-25 20:16:17] User: testuser - Action: Attempted to delete product
+[2025-11-25 20:16:40] User: testuser - Action: Product deletion failed: carteraszzzz not found
+[2025-11-25 20:16:51] User: testuser - Action: Attempted to delete product
+[2025-11-25 20:16:59] User: testuser - Action: Product deleted: carteras supreme, Price=$5550.00, Stock=50
+[2025-11-25 20:17:12] User: testuser - Action: Viewed logs
+[2025-11-25 20:18:08] User: testuser - Action: Logout
+[2025-11-25 20:18:50] User: papas@gmail.com - Action: Login failed
+[2025-11-25 20:19:46] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:20:30] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:20:48] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:21:11] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:21:31] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:21:49] User: testuser - Action: Login successful
+[2025-11-25 20:39:04] User: testuser - Action: Logout
+[2025-11-25 20:39:42] User: testuser - Action: Login successful
+[2025-11-25 20:40:49] User: testuser - Action: Viewed products
+[2025-11-25 20:41:23] User: testuser - Action: Attempted to add product
+[2025-11-25 20:41:38] User: testuser - Action: Product created: tennis nike, Price=$99.00, Stock=55
+[2025-11-25 20:41:51] User: testuser - Action: Attempted to edit product
+[2025-11-25 20:42:23] User: testuser - Action: Product update failed: gogogog not found
+[2025-11-25 20:43:50] User: testuser - Action: Attempted to edit product
+[2025-11-25 20:44:15] User: testuser - Action: Product updated: tennis nike | Old: Price=$99.00, Stock=55 | New: Name=tennis nonike, Price=$99.00, Stock=66
+[2025-11-25 20:44:27] User: testuser - Action: Viewed products
+[2025-11-25 20:45:34] User: testuser - Action: Attempted to delete product
+[2025-11-25 20:45:46] User: testuser - Action: Product deleted: papas, Price=$5555555555555555633551034754442806765692331698340507560768335719167850252702783783788007402420315935811793653543227883677388293159063316104042654004690093873153366982393856.00, Stock=555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+[2025-11-25 20:45:56] User: testuser - Action: Viewed logs
+[2025-11-25 20:47:12] User: testuser - Action: Attempted to add product
+[2025-11-25 20:47:24] User: testuser - Action: Logout
+[2025-11-25 20:48:03] User: test@gmail.com - Action: Login failed
+[2025-11-25 20:48:53] User: testuser - Action: Login successful
+[2025-11-25 20:48:58] User: testuser - Action: Attempted to add product
+[2025-11-25 20:49:34] User: testuser - Action: Attempted to add product
+[2025-11-25 21:03:42] User: testuser - Action: Logout
+[2025-11-25 21:03:58] User: test@gmail.com - Action: Login failed
+[2025-11-25 21:04:20] User: testuser - Action: Login successful
+[2025-11-25 21:06:04] User: testuser - Action: Viewed products
+[2025-11-25 21:06:45] User: testuser - Action: Attempted to add product
+[2025-11-25 21:07:08] User: testuser - Action: Product created: Papas, Price=$55.00, Stock=55
+[2025-11-25 21:07:36] User: testuser - Action: Attempted to edit product
+[2025-11-25 21:15:52] User: testuser - Action: Product update failed: ggg not found
+[2025-11-25 21:15:54] User: testuser - Action: Logout
+[2025-11-25 21:16:10] User: testuser - Action: Login successful
+[2025-11-25 21:16:48] User: testuser - Action: Logout
+[2025-11-25 21:17:03] User: testuser - Action: Login successful
+[2025-11-25 21:30:34] User: testuser - Action: Logout
+[2025-11-25 21:30:58] User: test@gmai.com - Action: Login failed
+[2025-11-25 21:32:17] User: testuser - Action: Login successful
+[2025-11-25 21:33:23] User: testuser - Action: Viewed products
+[2025-11-25 21:33:53] User: testuser - Action: Attempted to add product
+[2025-11-25 21:34:12] User: testuser - Action: Product created: tennis adiddas, Price=$55.00, Stock=77
+[2025-11-25 21:34:24] User: testuser - Action: Attempted to edit product
+[2025-11-25 21:35:39] User: testuser - Action: Product update failed: tennisxd not found
+[2025-11-25 21:36:29] User: testuser - Action: Attempted to edit product
+[2025-11-25 21:36:54] User: testuser - Action: Product updated: tennis nonike | Old: Price=$99.00, Stock=66 | New: Name=tennis nike, Price=$66.00, Stock=77
+[2025-11-25 21:37:08] User: testuser - Action: Viewed products
+[2025-11-25 21:37:24] User: testuser - Action: Attempted to delete product
+[2025-11-25 21:37:40] User: testuser - Action: Product deleted: camisa gucci, Price=$99999999999999992486776161899288204254467086983483846143922597222529419997579302660316349376281765375153005841365553228283904.00, Stock=4444
+[2025-11-25 21:37:47] User: testuser - Action: Viewed products
+[2025-11-25 21:37:55] User: testuser - Action: Attempted to delete product
+[2025-11-25 21:37:58] User: testuser - Action: Product deletion failed: ttthgtgtgtg not found
+[2025-11-25 21:38:58] User: testuser - Action: Logout
+[2025-11-25 21:39:28] User: test@gmail.com - Action: Login failed
+[2025-11-25 21:40:31] User: testuser - Action: Login successful
+[2025-11-25 21:40:34] User: testuser - Action: Attempted to add product
+[2025-11-25 21:41:13] User: testuser - Action: Attempted to add product
+[2025-11-25 21:43:52] User: testuser - Action: Viewed logs
+[2025-11-25 22:02:41] User: testuser - Action: Logout
+[2025-11-25 22:02:55] User: testuser - Action: Login successful
+[2025-11-25 22:04:14] User: testuser - Action: Viewed products
+[2025-11-25 22:04:23] User: testuser - Action: Attempted to add product
+[2025-11-25 22:04:31] User: testuser - Action: Product created: tennis supreme, Price=$555.00, Stock=77
+[2025-11-25 22:04:37] User: testuser - Action: Attempted to edit product
+[2025-11-25 22:05:45] User: testuser - Action: Product update failed: ttttt not found
+[2025-11-25 22:05:55] User: testuser - Action: Attempted to edit product
+[2025-11-25 22:06:13] User: testuser - Action: Product updated: Papas | Old: Price=$55.00, Stock=55 | New: Name=quarter zip, Price=$55.00, Stock=55
+[2025-11-25 22:06:22] User: testuser - Action: Attempted to delete product
+[2025-11-25 22:06:29] User: testuser - Action: Product deleted: quarter zip, Price=$55.00, Stock=55
+[2025-11-25 22:06:34] User: testuser - Action: Attempted to delete product
+[2025-11-25 22:06:37] User: testuser - Action: Product deletion failed: 7777 not found
+[2025-11-25 22:06:50] User: testuser - Action: Viewed logs

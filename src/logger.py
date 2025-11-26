@@ -6,7 +6,7 @@ logfile = Path("logs/log.txt")
 
 
 def log_action(username: str, action: str):
-    """Registra una acción en el archivo de log."""
+   
     # Crear carpeta logs si no existe
     logfile.parent.mkdir(parents=True, exist_ok=True)
     

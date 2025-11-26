@@ -20,18 +20,33 @@
     "stock": 90
   },
   {
-    "name": "camisa gucci",
-    "price": 1e+125,
-    "stock": 4444
-  },
-  {
     "name": "chaqueta",
     "price": 1e+29,
     "stock": 5500
   },
   {
-    "name": "papas",
-    "price": 5.555555555555556e+171,
-    "stock": 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+    "name": "cartera gucci",
+    "price": 888.0,
+    "stock": 90
+  },
+  {
+    "name": "carterazzzz",
+    "price": 666.0,
+    "stock": 55
+  },
+  {
+    "name": "tennis nike",
+    "price": 66.0,
+    "stock": 77
+  },
+  {
+    "name": "tennis adiddas",
+    "price": 55.0,
+    "stock": 77
+  },
+  {
+    "name": "tennis supreme",
+    "price": 555.0,
+    "stock": 77
   }
 ]

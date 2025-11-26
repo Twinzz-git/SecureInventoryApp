@@ -28,5 +28,17 @@
     "email": "jose@gmail.com",
     "password_hash": "251c6586cda174b5f4aebb1b066a0dec503ae605a052d83da38d8d18a1cb01a0",
     "role": "user"
+  },
+  {
+    "username": "papas",
+    "email": "papas@gmail.com",
+    "password_hash": "7a8409b21c7bdc60639994db2fbe08b527dcc61711ba6f610182e8ce32e2beef",
+    "role": "user"
+  },
+  {
+    "username": "eleven",
+    "email": "eleven@gmail.com",
+    "password_hash": "d51694caa29cad42c5f5aad332e6145116b1995d7e97d31a74eb035163bf55e9",
+    "role": "user"
   }
 ]

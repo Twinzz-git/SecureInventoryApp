@@ -52,7 +52,7 @@ def login():
 
 
 def admin_menu(user):
-    """Menú para administradores"""
+    #Menú para administradores
     while True:
         print(f"\n--- ADMIN MENU ({user['username']}) ---")
         print("1. View products")
@@ -87,7 +87,7 @@ def admin_menu(user):
 
 
 def user_menu(user):
-    """Menú para usuarios regulares (solo lectura)"""
+    #Menú para usuarios regulares (solo lectura)
     while True:
         print(f"\n--- USER MENU ({user['username']}) ---")
         print("1. View products")
@@ -106,7 +106,7 @@ def user_menu(user):
 
 
 def add_product_menu(username):
-    """Menú para agregar producto"""
+    #Menú para agregar producto
     print("\n➕ ADD NEW PRODUCT")
     print("-"*40)
     
@@ -149,7 +149,7 @@ def add_product_menu(username):
 
 
 def edit_product_menu(username):
-    """Menú para editar producto"""
+    #Menú para editar producto
     products = loadproducts()
     
     if not products:

@@ -71,7 +71,7 @@ def readproducts():
 
 
 def updateproduct(product_name, name=None, price=None, stock=None, username="System"):
-    """Update the product details with the given values."""
+   
     products = loadproducts()
     
     # Buscar el producto por nombre

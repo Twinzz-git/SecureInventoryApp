@@ -11,7 +11,7 @@ def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode("utf-8")).hexdigest()
 
 
-# 📝 Registrar usuario
+
 def register_user(username: str, email: str, password: str, role: str = "user") -> bool:
     try:
         # Cargar usuarios existentes
