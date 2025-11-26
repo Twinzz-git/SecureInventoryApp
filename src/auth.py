@@ -23,7 +23,7 @@ def register_user(username: str, email: str, password: str, role: str = "user") 
         # Evitar duplicados
         for u in users:
             if u['username'] == username or u['email'] == email:
-                return False  # usuario ya existe
+                return False 
 
         # Agregar nuevo usuario
         users.append({
@@ -51,9 +51,8 @@ def login_user(email: str, password: str):
 
         for u in users:
             if u['email'] == email and u['password_hash'] == hash_password(password):
-                return u  # login exitoso, devuelve diccionario del usuario
-
-        return None  # login fallido
+                return u  
+        return None
     
     except Exception:
         return None

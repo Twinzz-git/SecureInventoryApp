@@ -18,7 +18,7 @@ def loadproducts():
 
 
 def saveproduct(products):
-    """Guarda todos los productos en el archivo"""
+    #Guarda todos los productos en el archivo
     try:
         productfile.parent.mkdir(parents=True, exist_ok=True)
         productfile.write_text(
@@ -31,7 +31,7 @@ def saveproduct(products):
 
 
 def createproduct(name, price, stock, username="System",):
-    """Create a new product with the given name, price, and stock."""
+    #Create a new product with the given name, price, and stock.
     products = loadproducts()
     
     product = {
@@ -52,7 +52,7 @@ def createproduct(name, price, stock, username="System",):
 
 
 def readproducts():
-    """Muestra todos los productos"""
+    #Muestra todos los productos
     products = loadproducts()
     
     if not products:
@@ -117,7 +117,7 @@ def updateproduct(product_name, name=None, price=None, stock=None, username="Sys
 
 
 def deleteproduct(product_name, username="System"):
-    """Delete the given product from the inventory."""
+    #Delete the given product from the inventory.
     products = loadproducts()
     
     # Buscar el producto por nombre
